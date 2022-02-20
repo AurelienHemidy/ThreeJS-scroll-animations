@@ -5,47 +5,44 @@
 }
 
 body {
-    height: 4000px;
+    overflow-x: hidden;
+    margin: 0px;
+    font-family: monospace;
+    color: white;
 }
 
-img {
-    background: #F1F1FA;
-    width: 400px;
-    height: 300px;
-    display: block;
-    margin: 10px auto;
-    border: 0;
-}
-
-.page {
+button {
     position: absolute;
+    z-index: 1000;
+}
 
+canvas {
+    position: fixed;
     top: 0;
     left: 0;
-
-    width: 100%;
 }
 
-.scroll-container {
-    height: calc(150vh + 100px);
-
-    background-color: black;
-
-    position: relative;
-
-    .animated-box {
-        height: 100px;
-        width: 100px;
-
-        position: absolute;
-
-        top: 0;
-        left: 50px;
-
-        background-color: brown;
-    }
+main {
+    width: 100vw;
+    height: 200vw;
+    z-index: 99;
+    position: absolute;
+    justify-content: center;
+    text-align: center;
+    pointer-events: none;
+    font-size: 5vh;
 }
 
-.test {
-    height: 200vh;
+section {
+    min-height: 100vh;
+    padding: 20px;
+    font-size: 4vh;
+}
+
+#scrollProgress {
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    z-index: 99;
+    font-size: 3vh;
 }

@@ -7,56 +7,16 @@ const textures = [
 ];
 
 const models = [
-    {
-        name: 'Duck',
-        type: 'gltf',
-        path: '/models/Duck/Duck.gltf',
-    },
+    // {
+    //     name: 'Duck',
+    //     type: 'gltf',
+    //     path: '/models/Duck/Duck.gltf',
+    // },
     // {
     //     name: 'Fox',
     //     type: 'gltf',
     //     path: '/models/Fox/Fox.gltf',
-    // },
-    // {
-    //     name: 'FlightHelmet',
-    //     type: 'gltf',
-    //     path: '/models//FlightHelmet/FlightHelmet.gltf',
-    // },
-    // {
-    //     name: 'FlightHelmet',
-    //     type: 'gltf',
-    //     path: '/models//FlightHelmet/FlightHelmet.gltf',
-    // },
-    // {
-    //     name: 'FlightHelmet',
-    //     type: 'gltf',
-    //     path: '/models//FlightHelmet/FlightHelmet.gltf',
-    // },
-    // {
-    //     name: 'FlightHelmet',
-    //     type: 'gltf',
-    //     path: '/models//FlightHelmet/FlightHelmet.gltf',
-    // },
-    // {
-    //     name: 'FlightHelmet',
-    //     type: 'gltf',
-    //     path: '/models//FlightHelmet/FlightHelmet.gltf',
-    // },
-    // {
-    //     name: 'FlightHelmet',
-    //     type: 'gltf',
-    //     path: '/models//FlightHelmet/FlightHelmet.gltf',
-    // },
-    // {
-    //     name: 'FlightHelmet',
-    //     type: 'gltf',
-    //     path: '/models//FlightHelmet/FlightHelmet.gltf',
-    // },
-    // {
-    //     name: 'FlightHelmet',
-    //     type: 'gltf',
-    //     path: '/models//FlightHelmet/FlightHelmet.gltf',
-    // },
+    // }
 ];
 
 const sounds = [
@@ -68,11 +28,11 @@ const sounds = [
 ];
 
 const images = [
-   {
-       name: 'image',
-       type: 'jpg',
-       path: '/images/image.jpg'
-   } 
+//    {
+//        name: 'image',
+//        type: 'jpg',
+//        path: '/images/image.jpg'
+//    } 
 ];
 
 export default [...textures, ...models, ...sounds, ...images];

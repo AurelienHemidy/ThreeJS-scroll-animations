@@ -19,10 +19,16 @@ import globalResources from '../../static/datas/globalResources';
 // Utils
 import bindAll from "./utils/bindAll";
 
+// Three Scene
+import ThreeScene from './three/threeScene';
+
 class App {
     constructor() {
         this._resourceLoader = new ResourceLoader();
         this.loaderUI = new LoaderUI("loader");
+        this._threeScene = new ThreeScene();
+
+        this._refreshButton = document.querySelector("button");
 
         this.datas = null;
 
@@ -32,7 +38,7 @@ class App {
         this.setupResources();
         this.setupEventListeners();
         this.loadResources();
-
+        // this._addRefreshButton();
     }
 
     registerLoaders() {
@@ -70,6 +76,13 @@ class App {
 
     _loadResourcesProgressHandler(e) {
         this.loaderUI.setLoaderProgress(Math.round(e * 100));
+    }
+
+    _addRefreshButton() {
+        this._refreshButton.addEventListener("click", () => {
+            // this._threeScene._setup();
+            this._threeScene._render();
+        });
     }
 
 }
