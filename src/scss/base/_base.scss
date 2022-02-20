@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 4000px;
+}
+
+img {
+    background: #F1F1FA;
+    width: 400px;
+    height: 300px;
+    display: block;
+    margin: 10px auto;
+    border: 0;
+}
+
+.page {
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+}
+
+.scroll-container {
+    height: calc(150vh + 100px);
+
+    background-color: black;
+
+    position: relative;
+
+    .animated-box {
+        height: 100px;
+        width: 100px;
+
+        position: absolute;
+
+        top: 0;
+        left: 50px;
+
+        background-color: brown;
+    }
+}
+
+.test {
+    height: 200vh;
+}

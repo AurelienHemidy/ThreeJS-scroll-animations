@@ -1,0 +1,21 @@
+/**
+* Reset
+*/
+@import './_reset.scss';
+
+/**
+* Base
+*/
+@import './base/_base.scss';
+
+/**
+* Components
+*/
+@import "./components/loader.scss";
+
+/**
+* Components
+*/
+@import './pages/_page1.scss';
+@import './pages/_page2.scss';
+@import './pages/_page3.scss';
